@@ -1,0 +1,5 @@
+ for i in {1..50}; do
+   date +%N > scrubber.txt
+   git commit -a -m 'Scrubbing'
+   git push origin master --force
+ done
